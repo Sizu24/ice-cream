@@ -1,0 +1,70 @@
+h1 {
+  text-align: center;
+  position: relative;
+  top: 10px;
+  color: #fff;
+  font-family: "Lobster", cursive;
+  font-size: 4em;
+  margin-top: 0;
+  margin-bottom: 290px;
+}
+
+#grid {
+  display: grid;
+  grid-template-rows: 50px 2fr 50px;
+  grid-template-areas: "nav" "main" "footer";
+}
+
+#nav {
+  grid-area: nav;
+  background-color: #414141;
+}
+
+#main {
+  grid-area: main;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#footer {
+  grid-area: footer;
+  background-color: #414141;
+}
+
+#main {
+  background-image: url("../images/icecream.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+i {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+}
+
+#logo {
+  font-size: 1em;
+  padding: 0 0 0 15px;
+  color: pink;
+}
+
+.nav-item {
+  text-align: center;
+  padding: 5px;
+}
+
+.action-button {
+  padding: 15px 75px;
+  border-radius: 20px;
+  border: none;
+  margin: 0 auto;
+  font-size: 1.8em;
+  background-color: #D04F4F;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
