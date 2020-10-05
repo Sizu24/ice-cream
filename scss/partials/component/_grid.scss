@@ -17,6 +17,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @include mq($md){
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+  }
 }
 #footer{
   grid-area: footer;

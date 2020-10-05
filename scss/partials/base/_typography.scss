@@ -5,6 +5,27 @@ h1{
   color: #fff;
   font-family: 'Lobster', cursive;;
   font-size: 4em;
+  padding: 25px;
   margin-top: 0;
   margin-bottom: 290px;
+  @include mq($md){
+    // margin-bottom: 100px;
+    margin-bottom: 0;
+    padding-top: 180px;
+    font-size: 6em;
+    grid-row: 1/2;
+  }
+}
+
+#main{
+  h2{
+    color: #fff;
+    text-align: center;
+    font-family: 'Lobster', cursive;;
+    margin-bottom: 25px;
+    grid-row: 3/4;
+    @include max-screen($sm){
+      display: none;
+    }
+  }
 }

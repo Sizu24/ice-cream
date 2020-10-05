@@ -5,8 +5,30 @@ h1 {
   color: #fff;
   font-family: "Lobster", cursive;
   font-size: 4em;
+  padding: 25px;
   margin-top: 0;
   margin-bottom: 290px;
+}
+@media (min-width: 768px) {
+  h1 {
+    margin-bottom: 0;
+    padding-top: 180px;
+    font-size: 6em;
+    grid-row: 1/2;
+  }
+}
+
+#main h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  margin-bottom: 25px;
+  grid-row: 3/4;
+}
+@media (max-width: 576px) {
+  #main h2 {
+    display: none;
+  }
 }
 
 #grid {
@@ -27,6 +49,12 @@ h1 {
   flex-direction: column;
   justify-content: center;
 }
+@media (min-width: 768px) {
+  #main {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+  }
+}
 
 #footer {
   grid-area: footer;
@@ -37,6 +65,11 @@ h1 {
   background-image: url("../images/icecream.jpeg");
   background-position: center;
   background-size: cover;
+}
+@media (min-width: 768px) {
+  #main {
+    background-image: url("../images/icecream-large.jpeg");
+  }
 }
 
 i {
@@ -54,17 +87,22 @@ i {
 
 .nav-item {
   text-align: center;
-  padding: 5px;
+  padding: 0 5px;
 }
 
 .action-button {
   padding: 15px 75px;
   border-radius: 20px;
   border: none;
-  margin: 0 auto;
+  margin: 0 auto 80px auto;
   font-size: 1.8em;
   background-color: #D04F4F;
   color: #fff;
+}
+@media (min-width: 768px) {
+  .action-button {
+    padding: 15px 135px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

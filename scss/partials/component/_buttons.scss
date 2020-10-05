@@ -2,10 +2,12 @@
   padding: 15px 75px;
   border-radius: 20px;
   border: none;
-  margin: 0 auto;
-
+  margin: 0 auto 80px auto;
   font-size: 1.8em;
   background-color: #D04F4F;
   color: #fff;
+  @include mq($md){
+    padding: 15px 135px;
+  }
   
 }
