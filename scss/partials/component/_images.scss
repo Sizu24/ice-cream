@@ -4,5 +4,6 @@
   background-size: cover;
   @include mq($md){
     background-image: url("../images/icecream-large.jpeg");
+    
   }
 }

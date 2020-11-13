@@ -8,6 +8,9 @@
   color: #fff;
   @include mq($md){
     padding: 15px 135px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 55px;
   }
   
 }

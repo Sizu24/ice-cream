@@ -1,4 +1,14 @@
 .nav-item{
   text-align: center;
   padding: 0 5px;
+  @include mq($md){
+    padding: 0 10px;
+  }
+}
+
+#navbarNav{
+  @include mq($md){
+    justify-content: flex-end;
+    padding-right: 80px;
+  }
 }

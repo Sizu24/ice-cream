@@ -3,7 +3,7 @@ h1 {
   position: relative;
   top: 10px;
   color: #fff;
-  font-family: "Lobster", cursive;
+  font-family: "Marker Felt";
   font-size: 4em;
   padding: 25px;
   margin-top: 0;
@@ -13,21 +13,26 @@ h1 {
   h1 {
     margin-bottom: 0;
     padding-top: 180px;
-    font-size: 6em;
+    padding-bottom: 0;
+    font-size: 6.5em;
+    grid-column: 1/4;
     grid-row: 1/2;
   }
 }
 
 #main h2 {
   color: #fff;
+  font-family: "Marker Felt";
   text-align: center;
-  font-family: "Lobster", cursive;
-  margin-bottom: 25px;
-  grid-row: 3/4;
+  font-size: 1.4em;
 }
-@media (max-width: 576px) {
+@media (min-width: 768px) {
   #main h2 {
-    display: none;
+    font-size: 2em;
+    margin-top: 330px;
+    margin-bottom: 0;
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
 }
 
@@ -53,6 +58,7 @@ h1 {
   #main {
     display: grid;
     grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
   }
 }
 
@@ -89,6 +95,18 @@ i {
   text-align: center;
   padding: 0 5px;
 }
+@media (min-width: 768px) {
+  .nav-item {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  #navbarNav {
+    justify-content: flex-end;
+    padding-right: 80px;
+  }
+}
 
 .action-button {
   padding: 15px 75px;
@@ -102,6 +120,9 @@ i {
 @media (min-width: 768px) {
   .action-button {
     padding: 15px 135px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 55px;
   }
 }
 

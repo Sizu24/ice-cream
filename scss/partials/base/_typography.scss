@@ -3,7 +3,8 @@ h1{
   position: relative;
   top: 10px;
   color: #fff;
-  font-family: 'Lobster', cursive;;
+  // font-family: 'Lobster', cursive;;
+  font-family: 'Marker Felt';
   font-size: 4em;
   padding: 25px;
   margin-top: 0;
@@ -12,7 +13,9 @@ h1{
     // margin-bottom: 100px;
     margin-bottom: 0;
     padding-top: 180px;
-    font-size: 6em;
+    padding-bottom: 0;
+    font-size: 6.5em;
+    grid-column: 1/4;
     grid-row: 1/2;
   }
 }
@@ -20,12 +23,18 @@ h1{
 #main{
   h2{
     color: #fff;
+    // font-family: 'Lobster', cursive;
+    font-family: 'Marker Felt';
     text-align: center;
-    font-family: 'Lobster', cursive;;
-    margin-bottom: 25px;
-    grid-row: 3/4;
-    @include max-screen($sm){
-      display: none;
+    font-size: 1.4em;
+
+    @include mq($md){
+      font-size: 2em;
+      margin-top: 330px;
+      margin-bottom: 0;
+      grid-column: 2/3;
+      grid-row: 1/2;
     }
+    
   }
 }
